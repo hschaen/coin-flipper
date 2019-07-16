@@ -11,7 +11,6 @@
 
      //  Declare and initialize a variable named randomNumber to either 0 or 1. Make it random.
      var randomNumber = Math.round(Math.random());
-     console.log(randomNumber);
      //  STEP TWO:
 
      //  If randomNumber is equal to zero then
@@ -19,14 +18,12 @@
          //  Find the div with an id of coin-image.
          //  Replace its html with an img tag containing this image:
          //  http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg
-         var headsImg = $('#coin-image');
-         headsImg.html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg" alt="heads" />');
+        $('#coin-image').html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg" alt="heads" />');
      } else { // Else:
          //  Find the div with an id of coin-image.
          //  Replace its html with an img tag containing this image:
          //  http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg
-         var tailsImg = $('#coin-image');
-         tailsImg.html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg" alt="tails" />');
+         $('#coin-image').html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg" alt="tails" />');
      }
 
 
@@ -45,7 +42,7 @@
          //  Find the div with an id of win-lose. Update it with an h2 of "Winner!"
          $('#win-lose').html("<h2>Winner!</h2>");
          //  Find the div with an id of wins. Update it with the value of the wins variable.
-         $('#wins').text(wins);
+         $('#wins').text('<h3>' + wins + '</h3>');
      } else { // Else:
 
          //  Increment losses by one.
