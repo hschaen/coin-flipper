@@ -3,61 +3,85 @@
 
 <html lang="en-us">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <title>Coin Flipper</title>
+  <meta charset="UTF-8">
+  <title>Coin Flipper</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-  </head>
+<body>
 
-  <body>
+  <!-- The html is done for us. -->
+  <main class="container">
+    <header class="row">
+      <div class="col-sm-12 text-center">
+        <h1>Flip A Coin!</h1>
+        <h2>Guess Heads or Tails:</h2>
+      </div>
+    </header>
 
-    <!-- The html is done for us. -->
-    <h1>Flip A Coin!</h1>
-    <h2>Guess Heads or Tails:</h2>
-
-    <button id="heads">Heads</button>
-    <button id="tails">Tails</button>
-
-    <br>
-
-    <div> You guessed:
-      <span id="guess"></span>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 text-center">
+        <button class="btn btn-success" id="heads">Heads</button>
+      </div>
+    <div style="margin:30px 0;"></div>
+      <div class="col-xs-12 col-sm-6 text-center">
+        <button class="btn btn-success" id="tails">Tails</button>
+      </div>
     </div>
-
-    <br>
-
-    <div id="coin-image"></div>
-
-    <div id="win-lose"></div>
-
-    <div id="win-loss-tracker">
-
-      <div>
-        <h3>Wins: </h3>
-        <span id="wins"></span>
+    <div style="margin:50px 0;"></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div> You guessed:
+          <div id="coin-image"></div>
+          <span id="guess"></span>
+        </div>
       </div>
-
-      <div>
-        <h3>Losses: </h3>
-        <span id="losses"></span>
-      </div>
-
-      <div>
-        <h3>Heads chosen: </h3>
-        <span id="heads-chosen"></span>
-      </div>
-
-      <div>
-        <h3>Tails chosen: </h3>
-        <span id="tails-chosen"></span>
-      </div>
-
     </div>
+    <div style="margin:50px 0;"></div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div id="win-lose"></div>
+        <div id="win-loss-tracker">
+        </div>
+      </div>
+    </div>
+    <div style="margin:50px 0;"></div>
+    <div class="row text-center">
+      <div class="col-sm-3 text-center">
+        <div>
+          <h3>Wins: </h3>
+          <span id="wins"></span>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div>
+          <h3>Losses: </h3>
+          <span id="losses"></span>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div>
+          <h3>Heads chosen: </h3>
+          <span id="heads-chosen"></span>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div>
+          <h3>Tails chosen: </h3>
+          <span id="tails-chosen"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/game.js"></script>
 
-  </body>
+</body>
 
 </html>
