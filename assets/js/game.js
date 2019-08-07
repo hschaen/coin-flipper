@@ -19,11 +19,13 @@
          //  Replace its html with an img tag containing this image:
          //  http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg
         $('#coin-image').html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg" alt="heads" />');
+        $('#actual').text('Heads');
      } else { // Else:
          //  Find the div with an id of coin-image.
          //  Replace its html with an img tag containing this image:
          //  http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg
-         $('#coin-image').html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg" alt="tails" />');
+        $('#actual').text('Tails');
+        $('#coin-image').html('<img src="http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg" alt="tails" />');
      }
 
 
@@ -42,7 +44,7 @@
          //  Find the div with an id of win-lose. Update it with an h2 of "Winner!"
          $('#win-lose').html("<h2>Winner!</h2>");
          //  Find the div with an id of wins. Update it with the value of the wins variable.
-         $('#wins').text('<h3>' + wins + '</h3>');
+         $('#wins').html('<h3>' + wins + '</h3>');
      } else { // Else:
 
          //  Increment losses by one.
