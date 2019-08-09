@@ -1,5 +1,5 @@
- // Coin Flip JavaScript
- // These variables are declared for us.
+ // Harrison's Coin Flipper JS
+ // Declare Variables
  var headsCount = 0;
  var tailsCount = 0;
  var wins = 0;
@@ -64,33 +64,8 @@ function flipThatCoin(field1, field2) {
         $("#tails-chosen").text(tailsCount); 
 
     }
-    // if (randomNumber === result) {
-
-    //     wins++;
-    //     $('#win-lose').html("<h2>You're a Winner!</h2>");
-    //     $('#wins').html('<h3>' + wins + '</h3>');
-    // } else { 
-    //     losses++;
-    //     $('#win-lose').html('<h2>You Lost. Try Again!</h2>');
-    //     $('#losses').text(losses);
-    // }
 }
 
-// // Start Game
-//  $("#heads").on("click", function () {
-//     headsCount++;
-//     $("#heads-chosen").text(headsCount);
-//     $("#guess").html("<strong>" + $('#heads').text() +"</strong>");
-//     flipThatCoin(0);
-// });
-
-
-// $("#tails").on("click", function () {
-//     tailsCount++; 
-//     $("#tails-chosen").text(tailsCount); 
-//     $("#guess").html("<strong>" + $('#tails').text() + "</strong>"); 
-//     flipThatCoin(1);
-// });
 $('#flipThatCoin').on("click", function() {
     flipThatCoin();
 })
