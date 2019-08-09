@@ -18,26 +18,62 @@
     <header class="row">
       <div class="col-sm-12 text-center">
         <h1>Flip A Coin!</h1>
-        <h2>Guess Heads or Tails:</h2>
+        <h2>What are you flipping for?</h2>
       </div>
     </header>
 
     <div class="row">
       <div class="col-xs-12 col-sm-6 text-center">
-        <button class="btn btn-success" id="heads">Heads</button>
+        <!-- <button class="btn btn-success" id="heads">Heads</button>
+        <a href="#" id="changeOpt1" alt="change option 1">Change Option 1</a>
+        <div id="changeBtn1Val"></div> -->
+        <div class="option1">
+          <p class="optionText">Heads:</p>
+          <h2 id="option1val">Heads</h2>
+        </div>
+        <div class="form1">
+          <form id="form1">
+            <input type="text" id="field1" />
+            <input type="submit" class="btn btn-warning" id="submit1" value="Change"/>
+          </form>
+          <a href="#" id="changeOpt1" alt="change option 1">Change Option 1</a>
+
+        </div>
       </div>
     <div style="margin:30px 0;"></div>
       <div class="col-xs-12 col-sm-6 text-center">
-        <button class="btn btn-success" id="tails">Tails</button>
+        <!-- <button class="btn btn-success" id="tails">Tails</button>
+        <a href="#" id="changeOpt2" alt="change option 2">Change Option 2</a>        
+        <div id="changeBtn2Val"></div>]        -->
+        <div class="option2">
+          <p class="optionText">Tails:</p>
+          <h2 id="option2val">Tails</h2>
+        </div>
+        <div class="form2">
+          <form id="form2">
+            <input type="text" id="field2" />
+            <input type="submit" class="btn btn-warning" id="submit2" value="Change" />
+          </form>
+          <a href="#" id="changeOpt2" alt="change option 2">Change Option 2</a>
+        </div>
       </div>
     </div>
     <div style="margin:50px 0;"></div>
     <div class="row">
       <div class="col-sm-12 text-center">
+        <button id="flipThatCoin" class="btn btn-success">Flip That Coin</button>
+      </div>
+    </div>
+    <hr>
+    <div style="margin:50px 0;"></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
           
-          <div> You guessed: <span id="guess"></span>
+          <!-- <div> You guessed: <span id="guess"></span> -->
           <div id="coin-image"></div>
-          <span id="actual"></span>
+          <div id="actualText">
+            <span id="actual"></span> Wins!
+          </div>
         </div>
       </div>
     </div>
@@ -51,26 +87,18 @@
       </div>
     </div>
     <div style="margin:50px 0;"></div>
+    <hr>
     <div class="row text-center">
-      <div class="col-sm-3 text-center">
-        <div>
-          <h3>Wins: </h3>
-          <span id="wins"></span>
-        </div>
+      <div class="col-sm-12 text-center">
+        <h4>History</h3>
       </div>
-      <div class="col-sm-3 text-center">
-        <div>
-          <h3>Losses: </h3>
-          <span id="losses"></span>
-        </div>
-      </div>
-      <div class="col-sm-3 text-center">
+      <div class="col-sm-6 text-center">
         <div>
           <h3>Heads chosen: </h3>
           <span id="heads-chosen"></span>
         </div>
       </div>
-      <div class="col-sm-3 text-center">
+      <div class="col-sm-6 text-center">
         <div>
           <h3>Tails chosen: </h3>
           <span id="tails-chosen"></span>
